@@ -1,0 +1,30 @@
+{
+  "name": "love",
+  "options": {
+    "type": "uxcore",
+    "template": "",
+    "npm": "cnpm",
+    "vars": {
+      "__LOCAL__": true
+    },
+    "buildvars": {
+      "__LOCAL__": [false]
+    },
+    "pages": true,
+    "injects": [
+      "uxcore/assets/iconfont.css",
+      "uxcore/assets/orange.css",
+      "lie/dist/lie.polyfill",
+      "natty-storage/dist/natty-storage",
+      "natty-fetch/dist/natty-fetch.pc",
+      "react/dist/react-with-addons",
+      "react-dom/dist/react-dom",
+      "react-router/umd/ReactRouter",
+      "reflux/dist/reflux",
+      "uxcore"
+    ],
+    "mockapi": {
+      "/mock/query/getSomeInfo.json": "mock/query/getSomeInfo.js"
+    }
+  }
+}
